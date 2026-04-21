@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Juan Camilo Gale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="home-page">
+    
+    <header class="header">
+        <div class="logo">
+            <h1>Juan Camilo Gale Muñoz</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html#Aboutme">Sobre Mí</a></li>
+                <li><a href="Index.html#Projects">Proyectos</a></li>
+                <li><a href="Index.html#Contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Calculadora-Seccion">
+            <h2>Calculadora Interactiva</h2>
+            <p>Proyecto desarrollado para practicar lógica de programación en JavaScript y manipulación del DOM.</p>
+            
+            <div class="Calculadora">
+    <div id="Pantalla">
+        <div id="operacion-proceso"></div>
+        <div id="valor-actual">0</div>
+    </div>
+
+    <div class="botones">
+        <button class="btn-clear">C</button>
+        <button class="btn-op">/</button>
+        <button class="btn-op">*</button>
+        <button class="btn-op">-</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="btn-op" style="grid-row: span 2">+</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="btn-equal">=</button>
+
+        <button style="grid-column: span 2">0</button>
+        <button>.</button>
+    </div>
+</div>
+            
+            <div style="margin-top: 20px;">
+            </div>
+        </section>
+    </main>
+
+    <script src="Script1.js"></script>
+</body>
+</html>

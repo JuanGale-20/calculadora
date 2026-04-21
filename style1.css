@@ -1,0 +1,171 @@
+/* Variables compartidas con el portafolio principal */
+:root {
+    --bg-light: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --primary: #1e293b;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --text-main: #334155;
+    --border: #e2e8f0;
+    --transition: all 0.3s ease;
+}
+
+/* Estilos de base y fondo de pantalla */
+body.home-page {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://e0.pxfuel.com/wallpapers/489/468/desktop-wallpaper-mechanical-engineering-system-engineer-thumbnail.jpg') 
+                no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-main);
+}
+
+/* Header idéntico al Index.html */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--primary);
+}
+
+.header ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal de la sección */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    background-color: var(--bg-card);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Diseño de la Calculadora */
+.Calculadora {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#Pantalla {
+    background: #0f172a;
+    color: #10b981;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#operacion-proceso {
+    font-size: 1rem;
+    color: rgba(16, 185, 129, 0.6);
+    margin-bottom: 5px;
+    min-height: 1.2rem;
+    letter-spacing: 1px;
+}
+
+#valor-actual {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+#linea1{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+#linea2{
+    font-size: 18px;
+}
+
+#resultado{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo de los botones de la calculadora */
+button {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    background: white;
+    transition: var(--transition);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #f1f5f9;
+}
+
+
+.btn-op { background: #334155; color: white; }
+.btn-clear { background: #ef4444; color: white; }
+.btn-equal { background: #10b981; color: white; }
+
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
